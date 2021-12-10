@@ -1,22 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" width="25%">
-    <HelloWorld msg="Hello Vue in CodeSandbox!"/>
+    <Lf />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import Lf from "./components/Lf";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
-  }
+    Lf,
+  },
 };
 </script>
 
 <style>
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -24,5 +28,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  width: 100%;
+  height: 100%;
 }
 </style>
